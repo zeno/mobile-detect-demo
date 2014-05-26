@@ -33,14 +33,14 @@ var result;
 $.each(keys, function(i, key) {
   result = md.is(key);
   if (result) {
-    $('#keys').append($('<div><span class="function">is</span>(<span class="string">\''+key+'\'</span>)<span class="less equal">=</span><span class="value">'+result+'</span></div>'));
+    $('#keys').append($('<div><span class="function">is</span>(<span class="string">\''+key+'\'</span>)<span class="less equal">=</span><span class="value boolean">'+result+'</span></div>'));
   }
 });
 
 $.each(versionKeys, function(i, key) {
   result = md.version(key);
   if (result) {
-    $('#versions').append($('<div><span class="function">version</span>(<span class="string">\''+key+'\'</span>)<span class="less equal">=</span><span class="value">'+result+'</span></div>'));
+    $('#versions').append($('<div><span class="function">version</span>(<span class="string">\''+key+'\'</span>)<span class="less equal">=</span><span class="value number">'+result+'</span></div>'));
   }
   else {
     // try with versionStr

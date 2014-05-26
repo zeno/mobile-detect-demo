@@ -4,10 +4,12 @@
 }
 body {
   background: #efefef;
-  font-family: Menlo, Monaco, "Courier New", Courier;
-  color: #333
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.hero {
+
+.demo {
+  font-family: Menlo, Monaco, "Courier New", Courier;
   position: relative;
   margin: 50px auto 50px auto;
   width: 320px;
@@ -20,7 +22,7 @@ body {
   padding: 0 20px 20px;
   box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 8px
 }
-.hero .info {
+.demo .info {
   list-style-type: none;
   text-align: right;
   position: absolute;
@@ -32,46 +34,99 @@ body {
   padding: 0;
   margin: 0
 }
-.hero .info li {
+.demo .info li {
   padding-bottom: 10px
 }
-.hero h1 {
+.demo h1 {
   padding: 18px 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px
 }
-.hero h1 a {
+.demo h1 a {
   color: #cccccc;
   text-decoration: none;
 }
-.hero h1 a:hover {
+.demo h1 a:hover {
   color: #ffffff;
 }
-.hero h2 {
+.demo h2 {
   font-size: 18px
 }
-.hero div.indent {
+.demo div.indent {
   margin-left: 20px
 }
-.hero span.value {
+.demo .string {
+  color: #99cc99;
+}
+.demo .function {
+  color: #6699cc;
+}
+.demo .less {
+  color: #999999;
+}
+.demo .equal {
+  padding: 0 16px 0 12px;
+}
+.demo .value {
   font-weight: bold;
   color: #f99157;
 }
-.hero span.string {
-  color: #99cc99;
+.demo .value.number {
+  color: #f2777a;
 }
-.hero span.function {
-  color: #6699cc;
+.demo .value.boolean {
+  color: #cc99cc;
 }
-.hero span.less {
-  color: #999999;
+.demo .value.string {
+  color: yellow;
 }
-.hero span.equal {
-  padding: 0 16px 0 12px;
-}
-.spacer {
+.demo .spacer {
   width: 70%;
   margin: 10px 0;
   text-align: center;
   border-top: 1px solid #999999;
+}
+
+.legend {
+  margin: -32px auto 50px auto;
+  width: 360px;
+  font-size: 12px;
+  list-style-type: none;
+  color: #777;
+}
+.legend li {
+  margin-left:20px;
+  margin-bottom: 4px;
+}
+.legend .square {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #2d2d2d;
+  float: left;
+  margin-top: 1px;
+  margin-right: 4px;
+}
+.legend .label {
+  display: block;
+  overflow: hidden;
+}
+.legend .orange .square {
+  background: #f99157;
+}
+.legend .purple .square {
+  background: #cc99cc;
+}
+.legend .red .square {
+  background: #f2777a;
+}
+
+/* http://nicolasgallagher.com/micro-clearfix-hack */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+.cf:after {
+  clear: both;
 }

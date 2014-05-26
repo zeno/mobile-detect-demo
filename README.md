@@ -2,6 +2,8 @@
 
 Simple live demo page for [Mobile-detect.js](http://hgoebl.github.io/mobile-detect.js/).
 
+See it in action [here](http://zeno.github.io/mobile-detect-demo/).
+
 #### First time
 
 ```
