@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Mobile-Detect.js Demo</title>
+  <meta name="description" content="">
+  <!-- <meta name="viewport" content="width=device-width">
+  -->
+  <!-- <meta name="viewport" content="width=400">
+  -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="../bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+<body>
+
+  <div class="hero">
+    <h1><a href="http://hgoebl.github.io/mobile-detect.js/">Mobile-Detect.js</a></h1>
+    <ul class="info">
+      <li class="version">v0.2.0</li>
+      <!-- <li class="date"></li> -->
+    </ul>
+
+    <div class="mobile">
+      <span class="function">mobile</span>()<span class="less equal">=</span><span class="value"></span>
+    </div>
+    <div class="phone">
+      <span class="less">├─</span>
+      <span class="function">phone</span>()<span class="less equal">=</span><span class="value"></span>
+    </div>
+    <div class="tablet">
+      <span class="less">└─</span>
+      <span class="function">tablet</span>()<span class="less equal">=</span><span class="value"></span>
+    </div>
+    <div class="mobile-grade">
+      <span class="function">mobileGrade</span>()<span class="less equal">=</span><span class="value"></span>
+    </div>
+    <div class="os">
+      <span class="function">os</span>()<span class="less equal">=</span><span class="value"></span>
+    </div>
+    <div class="user-agent">
+      <span class="function">userAgent</span>()<span class="less equal">=</span><span class="value"></span>
+    </div>
+    <div class="spacer"></div>
+    <div id="keys"></div>
+    <div class="spacer"></div>
+    <div id="versions"></div>
+  </div>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/mobile-detect/mobile-detect.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js({app,.tmp}) scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

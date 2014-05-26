@@ -1,0 +1,77 @@
+* {
+  margin: 0px;
+  padding: 0px
+}
+body {
+  background: #efefef;
+  font-family: Menlo, Monaco, "Courier New", Courier;
+  color: #333
+}
+.hero {
+  position: relative;
+  margin: 50px auto 50px auto;
+  width: 320px;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #2d2d2d;
+  color: #cccccc;
+  border-radius: 6px;
+  padding: 0 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 8px
+}
+.hero .info {
+  list-style-type: none;
+  text-align: right;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #777;
+  padding: 0;
+  margin: 0
+}
+.hero .info li {
+  padding-bottom: 10px
+}
+.hero h1 {
+  padding: 18px 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px
+}
+.hero h1 a {
+  color: #cccccc;
+  text-decoration: none;
+}
+.hero h1 a:hover {
+  color: #ffffff;
+}
+.hero h2 {
+  font-size: 18px
+}
+.hero div.indent {
+  margin-left: 20px
+}
+.hero span.value {
+  font-weight: bold;
+  color: #f99157;
+}
+.hero span.string {
+  color: #99cc99;
+}
+.hero span.function {
+  color: #6699cc;
+}
+.hero span.less {
+  color: #999999;
+}
+.hero span.equal {
+  padding: 0 16px 0 12px;
+}
+.spacer {
+  width: 70%;
+  margin: 10px 0;
+  text-align: center;
+  border-top: 1px solid #999999;
+}
