@@ -16,8 +16,16 @@ bower install
 grunt serve
 ```
 
-#### Build for distribution
+#### Prepare for deploy
 
 ```
 grunt
+```
+
+#### Deploy on [GitHub Pages](https://pages.github.com)
+
+Use `git subtree` to deploy the `dist` directory to the `gh-pages` branch as explained [here](http://stephenplusplus.github.io/yeoman.io/deployment.html). Whenever you want to redeploy the `dist` directory you can run:
+
+```
+git subtree push --prefix dist origin gh-pages
 ```
