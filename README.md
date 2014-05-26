@@ -1,14 +1,23 @@
-# mobile-detect.js live demo 
+# Mobile-detect.js live demo 
 
-### Serve page locally
+Simple live demo page for [Mobile-detect.js](http://hgoebl.github.io/mobile-detect.js/).
+
+#### First time
+
+```
+npm install
+bower install
+```
+
+
+#### Serve page locally
 
 ```
 grunt serve
 ```
 
-### Build for distribution
+#### Build for distribution
 
 ```
 grunt
 ```
-
