@@ -11,10 +11,12 @@ var versionKeys = ['Mobile', 'Build', 'Version', 'VendorID', 'iPad', 'iPhone', '
 // $('.info .date').html(formattedDate);
 
 var content = $('.content');
+var legend = $('.legend');
 
 if (md.mobile()) {
   $('.mobile .value').html(md.mobile());
   content.show();
+  legend.show();
 }
 else {
   var alert = $('.desktop-alert');
@@ -22,6 +24,7 @@ else {
     e.preventDefault();
     alert.hide();
     content.show();
+    legend.show();
   });
   alert.show();
 }
