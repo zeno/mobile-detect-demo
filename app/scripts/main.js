@@ -10,8 +10,20 @@ var versionKeys = ['Mobile', 'Build', 'Version', 'VendorID', 'iPad', 'iPhone', '
 // var d = new Date(), formattedDate = d.getMonth()+1 +'/'+ d.getDate() +'/'+ d.getFullYear();
 // $('.info .date').html(formattedDate);
 
+var content = $('.content');
+
 if (md.mobile()) {
   $('.mobile .value').html(md.mobile());
+  content.show();
+}
+else {
+  var alert = $('.desktop-alert');
+  alert.select('.button').on('click', function(e){
+    e.preventDefault();
+    alert.hide();
+    content.show();
+  });
+  alert.show();
 }
 if (md.phone()) {
   $('.phone .value').html(md.phone());
